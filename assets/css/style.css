@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    position: relative;
+    overflow: hidden;
+}
+
+header{}
+header .btnBars{
+    margin: 20px 0 60px 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+}
+
+header .menu-icon{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    padding-top: 100px;
+}
+header .menu-icon a{
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+}
+
+header .menu{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background: #000;
+    padding-top: 100px;
+    transform: translateX(-120px);
+}
+.active{
+    transform: translateX(0px)!important;
+}
+header .menu a{
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+}
